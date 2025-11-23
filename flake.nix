@@ -21,7 +21,6 @@
         (
           {
             config,
-            lib,
             pkgs,
             ...
           }:
@@ -31,10 +30,20 @@
             networking.hostName = "tinynix";
 
             # === Nix ===
-            nix.settings.experimental-features = [
-              "nix-command"
-              "flakes"
-            ];
+            nix.settings = {
+              experimental-features = [
+                "nix-command"
+                "flakes"
+              ];
+              substituters = [
+                "https://cache.nixos.org"
+                "https://nix-community.cachix.org"
+              ];
+              trusted-public-keys = [
+                "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+                "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+              ];
+            };
 
             # === WSL2  ===
             wsl = {
@@ -42,15 +51,19 @@
               defaultUser = "user01";
               interop.includePath = false;
             };
-            services.chrony.enable = lib.mkForce false;
+
+            # TODO: remove this workaround when the next WSL2 image is released.
+            # https://github.com/nix-community/NixOS-WSL/issues/854
+            services.chrony.servers = [ ];
 
             # === SOPS ===
             sops.age.keyFile = "/config/keys.txt";
             sops.defaultSopsFile = ./secrets.yaml;
-            sops.secrets.user01-password.neededForUsers = true;
 
             # === Users ===
             users.defaultUserShell = pkgs.zsh;
+
+            sops.secrets.user01-password.neededForUsers = true;
             users.users.user01 = {
               isNormalUser = true;
               extraGroups = [ "wheel" ];
@@ -60,7 +73,6 @@
             # === Programs ===
             programs = {
               nix-ld.enable = true;
-              git.enable = true;
               neovim = {
                 enable = true;
                 defaultEditor = true;
@@ -88,7 +100,7 @@
                     path = "secrets.txt";
                   };
 
-                  # === Packages ===
+                  # === Programs ===
                   home.packages = with pkgs; [
                     age
                     sops
@@ -98,6 +110,21 @@
                     ncdu
                     ripgrep
                   ];
+                  programs = {
+                    zsh = {
+                      enable = true;
+                      enableVteIntegration = true;
+                      autosuggestion.enable = true;
+                      syntaxHighlighting.enable = true;
+                    };
+                    git = {
+                      enable = true;
+                      lfs.enable = true;
+                      settings = {
+                        init.defaultBranch = "main";
+                      };
+                    };
+                  };
                 };
             };
           }

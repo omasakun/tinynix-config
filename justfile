@@ -20,3 +20,15 @@ switch-boot host=`hostname` *args:
 # Edit the secrets
 secrets:
   sops secrets.yaml
+
+# Start a Nix REPL
+repl:
+  nix repl -f flake:nixpkgs
+
+# Show profile versions
+history:
+  nix profile history --profile /nix/var/nix/profiles/system
+
+# Delete old versions
+wipe-history target="--older-than 7d":
+  sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  {{ target }}
