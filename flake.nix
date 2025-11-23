@@ -26,23 +26,23 @@
             ...
           }:
           {
-            # === System basics ===
+            # === System===
             system.stateVersion = "25.05";
             networking.hostName = "tinynix";
 
-            # === WSL2 Configuration ===
+            # === Nix ===
+            nix.settings.experimental-features = [
+              "nix-command"
+              "flakes"
+            ];
+
+            # === WSL2  ===
             wsl = {
               enable = true;
               defaultUser = "user01";
               interop.includePath = false;
             };
             services.chrony.enable = lib.mkForce false;
-
-            # === Nix configuration ===
-            nix.settings.experimental-features = [
-              "nix-command"
-              "flakes"
-            ];
 
             # === SOPS ===
             sops.age.keyFile = "/config/keys.txt";
