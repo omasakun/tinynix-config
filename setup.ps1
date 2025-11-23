@@ -1,5 +1,6 @@
 $Name = "tinynix"
 $DownloadUrl = "https://github.com/nix-community/NixOS-WSL/releases/download/2505.7.0/nixos.wsl"
+$WslFile = "nixos.wsl"
 
 if (-not (Test-Path $WslFile)) {
   Invoke-WebRequest $DownloadUrl -OutFile $WslFile -UseBasicParsing
