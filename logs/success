@@ -1,0 +1,680 @@
+tinynix kernel: Linux version 6.6.87.2-microsoft-standard-WSL2 (root@439a258ad544) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025
+tinynix kernel: Command line: initrd=\initrd.img WSL_ROOT_INIT=1 panic=-1 nr_cpus=16 hv_utils.timesync_implicit=1 console=hvc0 debug pty.legacy_count=0
+tinynix kernel: KERNEL supported cpus:
+tinynix kernel:   Intel GenuineIntel
+tinynix kernel:   AMD AuthenticAMD
+tinynix kernel: BIOS-provided physical RAM map:
+tinynix kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+tinynix kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000e0fff] reserved
+tinynix kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000001fffff] ACPI data
+tinynix kernel: BIOS-e820: [mem 0x0000000000200000-0x00000000f7ffffff] usable
+tinynix kernel: BIOS-e820: [mem 0x0000000100000000-0x0000000507ffffff] usable
+tinynix kernel: NX (Execute Disable) protection: active
+tinynix kernel: APIC: Static calls initialized
+tinynix kernel: DMI not present or invalid.
+tinynix kernel: Hypervisor detected: Microsoft Hyper-V
+tinynix kernel: Hyper-V: privilege flags low 0xae7f, high 0x3b8030, hints 0x900c2c, misc 0xe0bed7b6
+tinynix kernel: Hyper-V: Nested features: 0x4a0000
+tinynix kernel: Hyper-V: LAPIC Timer Frequency: 0xc3500
+tinynix kernel: Hyper-V: Using hypercall for remote TLB flush
+tinynix kernel: clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+tinynix kernel: clocksource: hyperv_clocksource_msr: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+tinynix kernel: tsc: Detected 3193.922 MHz processor
+tinynix kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+tinynix kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+tinynix kernel: last_pfn = 0x508000 max_arch_pfn = 0x400000000
+tinynix kernel: MTRR map: 5 entries (4 fixed + 1 variable; max 20), built from 8 variable MTRRs
+tinynix kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT
+tinynix kernel: last_pfn = 0xf8000 max_arch_pfn = 0x400000000
+tinynix kernel: Using GB pages for direct mapping
+tinynix kernel: RAMDISK: [mem 0x04be4000-0x04e7ffff]
+tinynix kernel: ACPI: Early table checksum verification disabled
+tinynix kernel: ACPI: RSDP 0x00000000000E0000 000024 (v02 VRTUAL)
+tinynix kernel: ACPI: XSDT 0x0000000000100000 000044 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+tinynix kernel: ACPI: FACP 0x0000000000101000 000114 (v06 VRTUAL MICROSFT 00000001 MSFT 00000001)
+tinynix kernel: ACPI: DSDT 0x00000000001011B8 01E11C (v02 MSFTVM DSDT01   00000001 INTL 20230628)
+tinynix kernel: ACPI: FACS 0x0000000000101114 000040
+tinynix kernel: ACPI: OEM0 0x0000000000101154 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+tinynix kernel: ACPI: SRAT 0x000000000011F2D4 0003B0 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+tinynix kernel: ACPI: APIC 0x000000000011F684 0000C8 (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+tinynix kernel: ACPI: Reserving FACP table memory at [mem 0x101000-0x101113]
+tinynix kernel: ACPI: Reserving DSDT table memory at [mem 0x1011b8-0x11f2d3]
+tinynix kernel: ACPI: Reserving FACS table memory at [mem 0x101114-0x101153]
+tinynix kernel: ACPI: Reserving OEM0 table memory at [mem 0x101154-0x1011b7]
+tinynix kernel: ACPI: Reserving SRAT table memory at [mem 0x11f2d4-0x11f683]
+tinynix kernel: ACPI: Reserving APIC table memory at [mem 0x11f684-0x11f74b]
+tinynix kernel: SRAT: PXM 0 -> APIC 0x00 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x01 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x02 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x03 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x04 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x05 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x06 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x07 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x08 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x09 -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x0a -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x0b -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x0c -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x0d -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x0e -> Node 0
+tinynix kernel: SRAT: PXM 0 -> APIC 0x0f -> Node 0
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0xf7ffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x507ffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x508000000-0x9ffdfffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x1000000000-0xfcffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x10000000000-0x1ffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x20000000000-0x3ffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x40000000000-0x7ffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x80000000000-0xfffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000000-0x1fffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x200000000000-0x3fffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x400000000000-0x7fffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x800000000000-0xffffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x1000000000000-0x1ffffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x2000000000000-0x3ffffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x4000000000000-0x7ffffffffffff] hotplug
+tinynix kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x8000000000000-0xfffffffffffff] hotplug
+tinynix kernel: NUMA: Node 0 [mem 0x00000000-0xf7ffffff] + [mem 0x100000000-0x507ffffff] -> [mem 0x00000000-0x507ffffff]
+tinynix kernel: NODE_DATA(0) allocated [mem 0x507fde000-0x507ffffff]
+tinynix kernel: Zone ranges:
+tinynix kernel:   DMA32    [mem 0x0000000000001000-0x00000000ffffffff]
+tinynix kernel:   Normal   [mem 0x0000000100000000-0x0000000507ffffff]
+tinynix kernel:   Device   empty
+tinynix kernel: Movable zone start for each node
+tinynix kernel: Early memory node ranges
+tinynix kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+tinynix kernel:   node   0: [mem 0x0000000000200000-0x00000000f7ffffff]
+tinynix kernel:   node   0: [mem 0x0000000100000000-0x0000000507ffffff]
+tinynix kernel: Initmem setup node 0 [mem 0x0000000000001000-0x0000000507ffffff]
+tinynix kernel: On node 0, zone DMA32: 1 pages in unavailable ranges
+tinynix kernel: On node 0, zone DMA32: 352 pages in unavailable ranges
+tinynix kernel: ACPI: PM-Timer IO Port: 0x408
+tinynix kernel: ACPI: LAPIC_NMI (acpi_id[0x01] dfl dfl lint[0x1])
+tinynix kernel: IOAPIC[0]: apic_id 16, version 17, address 0xfec00000, GSI 0-23
+tinynix kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+tinynix kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+tinynix kernel: smpboot: Allowing 16 CPUs, 0 hotplug CPUs
+tinynix kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+tinynix kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+tinynix kernel: PM: hibernation: Registered nosave memory: [mem 0x000e0000-0x000e0fff]
+tinynix kernel: PM: hibernation: Registered nosave memory: [mem 0x000e1000-0x000fffff]
+tinynix kernel: PM: hibernation: Registered nosave memory: [mem 0x00100000-0x001fffff]
+tinynix kernel: PM: hibernation: Registered nosave memory: [mem 0xf8000000-0xffffffff]
+tinynix kernel: [mem 0xf8000000-0xffffffff] available for PCI devices
+tinynix kernel: Booting paravirtualized kernel on Hyper-V
+tinynix kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+tinynix kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+tinynix kernel: percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u262144
+tinynix kernel: pcpu-alloc: s221184 r8192 d28672 u262144 alloc=1*2097152
+tinynix kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15
+tinynix kernel: Hyper-V: PV spinlocks enabled
+tinynix kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+tinynix kernel: Kernel command line: initrd=\initrd.img WSL_ROOT_INIT=1 panic=-1 nr_cpus=16 hv_utils.timesync_implicit=1 console=hvc0 debug pty.legacy_count=0
+tinynix kernel: Unknown kernel command line parameters "WSL_ROOT_INIT=1", will be passed to user space.
+tinynix kernel: random: crng init done
+tinynix kernel: Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+tinynix kernel: Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+tinynix kernel: Fallback order for Node 0: 0
+tinynix kernel: Built 1 zonelists, mobility grouping on.  Total pages: 5159936
+tinynix kernel: Policy zone: Normal
+tinynix kernel: mem auto-init: stack:off, heap alloc:on, heap free:off
+tinynix kernel: software IO TLB: area num 16.
+tinynix kernel: Memory: 4123788K/20970108K available (20480K kernel code, 3457K rwdata, 13496K rodata, 4492K init, 6208K bss, 499996K reserved, 0K cma-reserved)
+tinynix kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+tinynix kernel: ftrace: allocating 55808 entries in 218 pages
+tinynix kernel: ftrace: allocated 218 pages with 5 groups
+tinynix kernel: Dynamic Preempt: none
+tinynix kernel: rcu: Preemptible hierarchical RCU implementation.
+tinynix kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+tinynix kernel:         Trampoline variant of Tasks RCU enabled.
+tinynix kernel:         Rude variant of Tasks RCU enabled.
+tinynix kernel:         Tracing variant of Tasks RCU enabled.
+tinynix kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+tinynix kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+tinynix kernel: Using NULL legacy PIC
+tinynix kernel: NR_IRQS: 524544, nr_irqs: 552, preallocated irqs: 0
+tinynix kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+tinynix kernel: Console: colour dummy device 80x25
+tinynix kernel: ACPI: Core revision 20230628
+tinynix kernel: Failed to register legacy timer interrupt
+tinynix kernel: APIC: Switch to symmetric I/O mode setup
+tinynix kernel: APIC: Switched APIC routing to: physical flat
+tinynix kernel: Hyper-V: Host Build 10.0.26100.7171-7-0
+tinynix kernel: Hyper-V: enabling crash_kexec_post_notifiers
+tinynix kernel: Hyper-V: Using IPI hypercalls
+tinynix kernel: APIC: send_IPI() replaced with hv_send_ipi()
+tinynix kernel: APIC: send_IPI_mask() replaced with hv_send_ipi_mask()
+tinynix kernel: APIC: send_IPI_mask_allbutself() replaced with hv_send_ipi_mask_allbutself()
+tinynix kernel: APIC: send_IPI_allbutself() replaced with hv_send_ipi_allbutself()
+tinynix kernel: APIC: send_IPI_all() replaced with hv_send_ipi_all()
+tinynix kernel: APIC: send_IPI_self() replaced with hv_send_ipi_self()
+tinynix kernel: Hyper-V: Using enlightened APIC (xapic mode)
+tinynix kernel: APIC: eoi() replaced with hv_apic_eoi_write()
+tinynix kernel: APIC: read() replaced with hv_apic_read()
+tinynix kernel: APIC: write() replaced with hv_apic_write()
+tinynix kernel: APIC: icr_write() replaced with hv_apic_icr_write()
+tinynix kernel: APIC: icr_read() replaced with hv_apic_icr_read()
+tinynix kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2e09dc5ceeb, max_idle_ns: 440795247995 ns
+tinynix kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6387.84 BogoMIPS (lpj=12775688)
+tinynix kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+tinynix kernel: Last level iTLB entries: 4KB 512, 2MB 512, 4MB 256
+tinynix kernel: Last level dTLB entries: 4KB 2048, 2MB 2048, 4MB 1024, 1GB 0
+tinynix kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+tinynix kernel: Spectre V2 : Mitigation: Retpolines
+tinynix kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+tinynix kernel: Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+tinynix kernel: Spectre V2 : Enabling Restricted Speculation for firmware calls
+tinynix kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+tinynix kernel: Spectre V2 : User space: Mitigation: STIBP always-on protection
+tinynix kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+tinynix kernel: Speculative Return Stack Overflow: IBPB-extending microcode not applied!
+tinynix kernel: Speculative Return Stack Overflow: WARNING: See https://kernel.org/doc/html/latest/admin-guide/hw-vuln/srso.html for mitigation options.
+tinynix kernel: Speculative Return Stack Overflow: Vulnerable: Safe RET, no microcode
+tinynix kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+tinynix kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+tinynix kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+tinynix kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+tinynix kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+tinynix kernel: x86/fpu: xstate_offset[11]:  832, xstate_sizes[11]:   16
+tinynix kernel: x86/fpu: Enabled xstate features 0x807, context size is 848 bytes, using 'compacted' format.
+tinynix kernel: Freeing SMP alternatives memory: 44K
+tinynix kernel: pid_max: default: 32768 minimum: 301
+tinynix kernel: LSM: initializing lsm=capability,landlock,yama,safesetid,selinux,integrity
+tinynix kernel: landlock: Up and running.
+tinynix kernel: Yama: becoming mindful.
+tinynix kernel: SELinux:  Initializing.
+tinynix kernel: Mount-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+tinynix kernel: Mountpoint-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+tinynix kernel: smpboot: CPU0: AMD Ryzen 7 5800H with Radeon Graphics (family: 0x19, model: 0x50, stepping: 0x0)
+tinynix kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+tinynix kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+tinynix kernel: RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+tinynix kernel: Performance Events: Fam17h+ core perfctr, AMD PMU driver.
+tinynix kernel: ... version:                0
+tinynix kernel: ... bit width:              48
+tinynix kernel: ... generic registers:      6
+tinynix kernel: ... value mask:             0000ffffffffffff
+tinynix kernel: ... max period:             00007fffffffffff
+tinynix kernel: ... fixed-purpose events:   0
+tinynix kernel: ... event mask:             000000000000003f
+tinynix kernel: signal: max sigframe size: 1776
+tinynix kernel: rcu: Hierarchical SRCU implementation.
+tinynix kernel: rcu:         Max phase no-delay instances is 1000.
+tinynix kernel: smp: Bringing up secondary CPUs ...
+tinynix kernel: smpboot: x86: Booting SMP configuration:
+tinynix kernel: .... node  #0, CPUs:        #2  #4  #6  #8 #10 #12 #14  #1  #3  #5  #7  #9 #11 #13 #15
+tinynix kernel: Spectre V2 : Update user space SMT mitigation: STIBP always-on
+tinynix kernel: smp: Brought up 1 node, 16 CPUs
+tinynix kernel: smpboot: Max logical packages: 1
+tinynix kernel: smpboot: Total of 16 processors activated (102205.50 BogoMIPS)
+tinynix kernel: node 0 deferred pages initialised in 32ms
+tinynix kernel: devtmpfs: initialized
+tinynix kernel: x86/mm: Memory block size: 128MB
+tinynix kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+tinynix kernel: futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+tinynix kernel: pinctrl core: initialized pinctrl subsystem
+tinynix kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+tinynix kernel: DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+tinynix kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+tinynix kernel: audit: initializing netlink subsys (disabled)
+tinynix kernel: audit: type=2000 audit(1763910109.080:1): state=initialized audit_enabled=0 res=1
+tinynix kernel: thermal_sys: Registered thermal governor 'step_wise'
+tinynix kernel: thermal_sys: Registered thermal governor 'user_space'
+tinynix kernel: cpuidle: using governor ladder
+tinynix kernel: cpuidle: using governor menu
+tinynix kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+tinynix kernel: dca service started, version 1.12.1
+tinynix kernel: PCI: Fatal: No config space access function found
+tinynix kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+tinynix kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+tinynix kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+tinynix kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+tinynix kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+tinynix kernel: cryptd: max_cpu_qlen set to 1000
+tinynix kernel: ACPI: Added _OSI(Module Device)
+tinynix kernel: ACPI: Added _OSI(Processor Device)
+tinynix kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+tinynix kernel: ACPI: Added _OSI(Processor Aggregator Device)
+tinynix kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+tinynix kernel: ACPI: _OSC evaluation for CPUs failed, trying _PDC
+tinynix kernel: ACPI: Interpreter enabled
+tinynix kernel: ACPI: PM: (supports S0 S5)
+tinynix kernel: ACPI: Using IOAPIC for interrupt routing
+tinynix kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+tinynix kernel: PCI: Using E820 reservations for host bridge windows
+tinynix kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+tinynix kernel: iommu: Default domain type: Translated
+tinynix kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+tinynix kernel: SCSI subsystem initialized
+tinynix kernel: libata version 3.00 loaded.
+tinynix kernel: pps_core: LinuxPPS API ver. 1 registered
+tinynix kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+tinynix kernel: PTP clock support registered
+tinynix kernel: EDAC MC: Ver: 3.0.0
+tinynix kernel: hv_vmbus: Vmbus version:5.3
+tinynix kernel: hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+tinynix kernel: hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+tinynix kernel: NetLabel: Initializing
+tinynix kernel: NetLabel:  domain hash size = 128
+tinynix kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+tinynix kernel: NetLabel:  unlabeled traffic allowed by default
+tinynix kernel: PCI: Using ACPI for IRQ routing
+tinynix kernel: PCI: System does not support PCI
+tinynix kernel: vgaarb: loaded
+tinynix kernel: clocksource: Switched to clocksource tsc-early
+tinynix kernel: VFS: Disk quotas dquot_6.6.0
+tinynix kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+tinynix kernel: FS-Cache: Loaded
+tinynix kernel: pnp: PnP ACPI init
+tinynix kernel: pnp: PnP ACPI: found 1 devices
+tinynix kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+tinynix kernel: NET: Registered PF_INET protocol family
+tinynix kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+tinynix kernel: tcp_listen_portaddr_hash hash table entries: 16384 (order: 6, 262144 bytes, linear)
+tinynix kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+tinynix kernel: TCP established hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+tinynix kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+tinynix kernel: TCP: Hash tables configured (established 262144 bind 65536)
+tinynix kernel: UDP hash table entries: 16384 (order: 7, 524288 bytes, linear)
+tinynix kernel: UDP-Lite hash table entries: 16384 (order: 7, 524288 bytes, linear)
+tinynix kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+tinynix kernel: NET: Registered PF_XDP protocol family
+tinynix kernel: PCI: CLS 0 bytes, default 64
+tinynix kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+tinynix kernel: software IO TLB: mapped [mem 0x00000000f4000000-0x00000000f8000000] (64MB)
+tinynix kernel: Trying to unpack rootfs image as initramfs...
+tinynix kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2e09dc5ceeb, max_idle_ns: 440795247995 ns
+tinynix kernel: clocksource: Switched to clocksource tsc
+tinynix kernel: Initialise system trusted keyrings
+tinynix kernel: Key type blacklist registered
+tinynix kernel: workingset: timestamp_bits=36 max_order=23 bucket_order=0
+tinynix kernel: Freeing initrd memory: 2672K
+tinynix kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+tinynix kernel: fuse: init (API version 7.39)
+tinynix kernel: SGI XFS with ACLs, security attributes, realtime, verbose warnings, quota, no debug enabled
+tinynix kernel: 9p: Installing v9fs 9p2000 file system support
+tinynix kernel: Key type asymmetric registered
+tinynix kernel: Asymmetric key parser 'x509' registered
+tinynix kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+tinynix kernel: io scheduler mq-deadline registered
+tinynix kernel: io scheduler kyber registered
+tinynix kernel: hv_vmbus: registering driver hv_pci
+tinynix kernel: hv_pci c4b741f5-5582-4c98-8f8b-2e082933c396: PCI VMBus probing: Using version 0x10004
+tinynix kernel: hv_pci c4b741f5-5582-4c98-8f8b-2e082933c396: PCI host bridge to bus 5582:00
+tinynix kernel: pci_bus 5582:00: root bus resource [mem 0x9ffe00000-0x9ffe02fff window]
+tinynix kernel: pci_bus 5582:00: No busn resource found for root bus, will use [bus 00-ff]
+tinynix kernel: pci 5582:00:00.0: [1af4:1043] type 00 class 0x010000
+tinynix kernel: pci 5582:00:00.0: reg 0x10: [mem 0x9ffe00000-0x9ffe00fff 64bit]
+tinynix kernel: pci 5582:00:00.0: reg 0x18: [mem 0x9ffe01000-0x9ffe01fff 64bit]
+tinynix kernel: pci 5582:00:00.0: reg 0x20: [mem 0x9ffe02000-0x9ffe02fff 64bit]
+tinynix kernel: pci_bus 5582:00: busn_res: [bus 00-ff] end is updated to 00
+tinynix kernel: pci 5582:00:00.0: BAR 0: assigned [mem 0x9ffe00000-0x9ffe00fff 64bit]
+tinynix kernel: pci 5582:00:00.0: BAR 2: assigned [mem 0x9ffe01000-0x9ffe01fff 64bit]
+tinynix kernel: pci 5582:00:00.0: BAR 4: assigned [mem 0x9ffe02000-0x9ffe02fff 64bit]
+tinynix kernel: hv_pci 8822cda6-9086-4f4e-9119-1f548de7eba1: PCI VMBus probing: Using version 0x10004
+tinynix kernel: hv_pci 8822cda6-9086-4f4e-9119-1f548de7eba1: PCI host bridge to bus 9086:00
+tinynix kernel: pci_bus 9086:00: No busn resource found for root bus, will use [bus 00-ff]
+tinynix kernel: pci 9086:00:00.0: [1414:008e] type 00 class 0x030200
+tinynix kernel: pci_bus 9086:00: busn_res: [bus 00-ff] end is updated to 00
+tinynix kernel: ioatdma: Intel(R) QuickData Technology Driver 5.00
+tinynix kernel: virtio-pci 5582:00:00.0: enabling device (0000 -> 0002)
+tinynix kernel: Serial: 8250/16550 driver, 8 ports, IRQ sharing enabled
+tinynix kernel: Linux agpgart interface v0.103
+tinynix kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system - This is not a bug.
+tinynix kernel: ACPI: bus type drm_connector registered
+tinynix kernel: printk: console [hvc0] enabled
+tinynix kernel: brd: module loaded
+tinynix kernel: loop: module loaded
+tinynix kernel: Loading iSCSI transport class v2.0-870.
+tinynix kernel: rdac: device handler registered
+tinynix kernel: Microchip SmartPQI Driver (v2.1.24-046)
+tinynix kernel: VMware PVSCSI driver - version 1.0.7.0-k
+tinynix kernel: hv_vmbus: registering driver hv_storvsc
+tinynix kernel: PPP generic driver version 2.4.2
+tinynix kernel: scsi host0: storvsc_host_t
+tinynix kernel: VMware vmxnet3 virtual NIC driver - version 1.7.0.0-k-NAPI
+tinynix kernel: hv_vmbus: registering driver hv_netvsc
+tinynix kernel: Fusion MPT base driver 3.04.20
+tinynix kernel: Copyright (c) 1999-2008 LSI Corporation
+tinynix kernel: Fusion MPT SPI Host driver 3.04.20
+tinynix kernel: Fusion MPT SAS Host driver 3.04.20
+tinynix kernel: Fusion MPT misc device (ioctl) driver 3.04.20
+tinynix kernel: mptctl: Registered with Fusion MPT base driver
+tinynix kernel: mptctl: /dev/mptctl @ (major,minor=10,220)
+tinynix kernel: i8042: PNP: No PS/2 controller found.
+tinynix kernel: hv_vmbus: registering driver hyperv_keyboard
+tinynix kernel: rtc_cmos 00:00: RTC can wake from S4
+tinynix kernel: rtc_cmos 00:00: registered as rtc0
+tinynix kernel: rtc_cmos 00:00: setting system clock to 2025-11-23T15:01:49 UTC (1763910109)
+tinynix kernel: rtc_cmos 00:00: alarms up to one month, 114 bytes nvram
+tinynix kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+tinynix kernel: device-mapper: uevent: version 1.0.3
+tinynix kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+tinynix kernel: hv_utils: Registering HyperV Utility Driver
+tinynix kernel: hv_vmbus: registering driver hv_utils
+tinynix kernel: hv_vmbus: registering driver hv_balloon
+tinynix kernel: hv_vmbus: registering driver dxgkrnl
+tinynix kernel: hv_utils: TimeSync IC version 4.0
+tinynix kernel: hv_balloon: Using Dynamic Memory protocol version 2.0
+tinynix kernel: Free page reporting enabled
+tinynix kernel: drop_monitor: Initializing network drop monitor service
+tinynix kernel: hv_balloon: Cold memory discard hint enabled with order 9
+tinynix kernel: NET: Registered PF_INET6 protocol family
+tinynix kernel: Segment Routing with IPv6
+tinynix kernel: In-situ OAM (IOAM) with IPv6
+tinynix kernel: NET: Registered PF_PACKET protocol family
+tinynix kernel: 9pnet: Installing 9P2000 support
+tinynix kernel: NET: Registered PF_VSOCK protocol family
+tinynix kernel: hv_vmbus: registering driver hv_sock
+tinynix kernel: IPI shorthand broadcast: enabled
+tinynix kernel: AVX2 version of gcm_enc/dec engaged.
+tinynix kernel: AES CTR mode by8 optimization enabled
+tinynix kernel: sched_clock: Marking stable (500006402, 919557)->(567566758, -66640799)
+tinynix kernel: registered taskstats version 1
+tinynix kernel: Loading compiled-in X.509 certificates
+tinynix kernel: ima: No TPM chip found, activating TPM-bypass!
+tinynix kernel: ima: Allocated hash algorithm: sha256
+tinynix kernel: ima: No architecture policies found
+tinynix kernel: RAS: Correctable Errors collector initialized.
+tinynix kernel: clk: Disabling unused clocks
+tinynix kernel: Freeing unused decrypted memory: 2028K
+tinynix kernel: Freeing unused kernel image (initmem) memory: 4492K
+tinynix kernel: Write protecting the kernel read-only data: 34816k
+tinynix kernel: Freeing unused kernel image (rodata/data gap) memory: 840K
+tinynix kernel: Run /init as init process
+tinynix kernel:   with arguments:
+tinynix kernel:     /init
+tinynix kernel:   with environment:
+tinynix kernel:     HOME=/
+tinynix kernel:     TERM=linux
+tinynix kernel:     WSL_ROOT_INIT=1
+tinynix kernel: scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+tinynix kernel: scsi 0:0:0:1: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+tinynix kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+tinynix kernel: sd 0:0:0:0: [sda] 795536 512-byte logical blocks: (407 MB/388 MiB)
+tinynix kernel: sd 0:0:0:1: Attached scsi generic sg1 type 0
+tinynix kernel: sd 0:0:0:0: [sda] Write Protect is on
+tinynix kernel: sd 0:0:0:1: [sdb] 381016 512-byte logical blocks: (195 MB/186 MiB)
+tinynix kernel: sd 0:0:0:1: [sdb] Write Protect is on
+tinynix kernel: sd 0:0:0:1: [sdb] Mode Sense: 0f 00 80 00
+tinynix kernel: sd 0:0:0:1: [sdb] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+tinynix kernel: sd 0:0:0:1: [sdb] Attached SCSI disk
+tinynix kernel: sd 0:0:0:0: [sda] Mode Sense: 0f 00 80 00
+tinynix kernel: sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+tinynix kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+tinynix kernel: scsi 0:0:0:2: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+tinynix kernel: sd 0:0:0:2: Attached scsi generic sg2 type 0
+tinynix kernel: sd 0:0:0:2: [sdc] 16777224 512-byte logical blocks: (8.59 GB/8.00 GiB)
+tinynix kernel: sd 0:0:0:2: [sdc] 4096-byte physical blocks
+tinynix kernel: sd 0:0:0:2: [sdc] Write Protect is off
+tinynix kernel: sd 0:0:0:2: [sdc] Mode Sense: 0f 00 00 00
+tinynix kernel: sd 0:0:0:2: [sdc] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+tinynix kernel: sd 0:0:0:2: [sdc] Attached SCSI disk
+tinynix kernel: EXT4-fs (sda): mounted filesystem 00000000-0000-0000-0000-000000000000 ro without journal. Quota mode: none.
+tinynix kernel: EXT4-fs (sdb): mounted filesystem 00000000-0000-0000-0000-000000000000 ro without journal. Quota mode: none.
+tinynix kernel: tun: Universal TUN/TAP device driver, 1.6
+tinynix kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+tinynix kernel: Adding 8388608k swap on /dev/sdc.  Priority:-2 extents:1 across:8388608k
+tinynix kernel: Bridge firewalling registered
+tinynix kernel: hv_netvsc fc232fd7-4443-4791-a539-deef713ec4d4 loopback0: renamed from eth3
+tinynix kernel: hv_pci bc535d64-7f2d-46ed-a37b-fd55231e03ca: PCI VMBus probing: Using version 0x10004
+tinynix kernel: hv_pci bc535d64-7f2d-46ed-a37b-fd55231e03ca: PCI host bridge to bus 7f2d:00
+tinynix kernel: pci_bus 7f2d:00: root bus resource [mem 0xc00000000-0xe00001fff window]
+tinynix kernel: pci_bus 7f2d:00: No busn resource found for root bus, will use [bus 00-ff]
+tinynix kernel: pci 7f2d:00:00.0: [1af4:105a] type 00 class 0x088000
+tinynix kernel: pci 7f2d:00:00.0: reg 0x10: [mem 0xe00000000-0xe00000fff 64bit]
+tinynix kernel: pci 7f2d:00:00.0: reg 0x18: [mem 0xe00001000-0xe00001fff 64bit]
+tinynix kernel: pci 7f2d:00:00.0: reg 0x20: [mem 0xc00000000-0xdffffffff 64bit]
+tinynix kernel: pci_bus 7f2d:00: busn_res: [bus 00-ff] end is updated to 00
+tinynix kernel: pci 7f2d:00:00.0: BAR 4: assigned [mem 0xc00000000-0xdffffffff 64bit]
+tinynix kernel: pci 7f2d:00:00.0: BAR 0: assigned [mem 0xe00000000-0xe00000fff 64bit]
+tinynix kernel: pci 7f2d:00:00.0: BAR 2: assigned [mem 0xe00001000-0xe00001fff 64bit]
+tinynix kernel: virtio-pci 7f2d:00:00.0: enabling device (0000 -> 0002)
+tinynix kernel: virtiofs virtio1: Cache len: 0x200000000 @ 0xc00000000
+tinynix kernel: scsi 0:0:0:3: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+tinynix kernel: sd 0:0:0:3: Attached scsi generic sg3 type 0
+tinynix kernel: sd 0:0:0:3: [sdd] 2147483648 512-byte logical blocks: (1.10 TB/1.00 TiB)
+tinynix kernel: sd 0:0:0:3: [sdd] 4096-byte physical blocks
+tinynix kernel: sd 0:0:0:3: [sdd] Write Protect is off
+tinynix kernel: sd 0:0:0:3: [sdd] Mode Sense: 0f 00 00 00
+tinynix kernel: sd 0:0:0:3: [sdd] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+tinynix kernel: sd 0:0:0:3: [sdd] Attached SCSI disk
+tinynix kernel: EXT4-fs (sdd): mounted filesystem 3a9fe62f-d413-4312-815f-06ea3057b441 r/w with ordered data mode. Quota mode: none.
+tinynix unknown: WSL (2 - init-systemd(tinynix)) WARNING: hostname set to tinynix in /etc/wsl.conf
+tinynix unknown: WSL (2 - init-systemd(tinynix)) WARNING: /usr/share/zoneinfo/Asia/Tokyo not found. Is the tzdata package installed?
+tinynix systemd_shim[1]: /dev/shm is not a symlink, leaving as-is...
+tinynix systemd_shim[1]: Remounting / shared...
+tinynix systemd_shim[1]: Remounting /nix/store read-only...
+tinynix systemd_shim[1]: Running activation script...
+tinynix unknown: setting up secrets for users...
+tinynix kernel: pulseaudio[356]: memfd_create() called without MFD_EXEC or MFD_NOEXEC_SEAL set
+tinynix kernel: misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+tinynix kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+tinynix kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+tinynix kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+tinynix kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+tinynix sh: line 1: systemctl: command not found
+tinynix sh: line 1: grep: command not found
+tinynix unknown: Can't ignore signal CHLD, forcing to default.
+tinynix sh: line 1: systemctl: command not found
+tinynix sh: line 1: grep: command not found
+tinynix unknown: Can't ignore signal CHLD, forcing to default.
+tinynix sh: line 1: systemctl: command not found
+tinynix sh: line 1: grep: command not found
+tinynix unknown: setting up /run/booted-system...
+tinynix unknown: setting up /bin...
+tinynix unknown: setting up /sbin...
+tinynix unknown: setting up /etc...
+tinynix unknown: setting up /sbin/init shim...
+tinynix systemd_shim[1]: Spawning real systemd...
+tinynix systemd[1]: systemd 258.1 running in system mode (+PAM +AUDIT -SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK -BTF -XKBCOMMON +UTMP -SYSVINIT +LIBARCHIVE)
+tinynix systemd[1]: Detected virtualization wsl.
+tinynix systemd[1]: Detected architecture x86-64.
+tinynix (sd-exec-[85]: '/run/systemd/system-generators/wsl-generator' is marked world-writable, which is a security risk as it is executed with privileges. Please remove world writability permission bits. Proceeding anyway.
+tinynix unknown: Failed to connect to system scope bus via local transport: No such file or directory
+tinynix systemd[1]: Queued start job for default target Multi-User System.
+tinynix systemd[1]: Created slice Slice /system/modprobe.
+tinynix systemd[1]: Created slice User and Session Slice.
+tinynix systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+tinynix systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+tinynix systemd[1]: Reached target Local Encrypted Volumes.
+tinynix systemd[1]: Reached target Virtual Machines and Containers.
+tinynix systemd[1]: Reached target Path Units.
+tinynix systemd[1]: Reached target Remote File Systems.
+tinynix systemd[1]: Reached target Slice Units.
+tinynix systemd[1]: Reached target Swaps.
+tinynix systemd[1]: Listening on Process Core Dump Socket.
+tinynix systemd[1]: Listening on Credential Encryption/Decryption.
+tinynix systemd[1]: Listening on Journal Audit Socket.
+tinynix systemd[1]: Listening on Journal Socket (/dev/log).
+tinynix systemd[1]: Listening on Journal Sockets.
+tinynix systemd[1]: Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+tinynix systemd[1]: Listening on udev Control Socket.
+tinynix systemd[1]: Listening on udev Kernel Socket.
+tinynix systemd[1]: Mounting Huge Pages File System...
+tinynix systemd[1]: Mounting POSIX Message Queue File System...
+tinynix systemd[1]: Mounting Kernel Debug File System...
+tinynix systemd[1]: Mounting Kernel Trace File System...
+tinynix systemd[1]: Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/run/booted-system/kernel-modules/lib/modules/6.6.87.2-microsoft-standard-WSL2/modules.devname).
+tinynix systemd[1]: Starting Load Kernel Module configfs...
+tinynix systemd[1]: Load Kernel Module drm was skipped because of an unmet condition check (ConditionKernelModuleLoaded=!drm).
+tinynix systemd[1]: Load Kernel Module efi_pstore was skipped because of an unmet condition check (ConditionKernelModuleLoaded=!efi_pstore).
+tinynix systemd[1]: Load Kernel Module fuse was skipped because of an unmet condition check (ConditionKernelModuleLoaded=!fuse).
+tinynix systemd[1]: Mounting FUSE Control File System...
+tinynix systemd[1]: Remove /tmp/.X11-unix symlink if present was skipped because of an unmet condition check (ConditionPathIsSymbolicLink=/tmp/.X11-unix).
+tinynix systemd[1]: Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+tinynix systemd[1]: Starting Journal Service...
+tinynix systemd[1]: Load Kernel Modules was skipped because no trigger condition checks were met.
+tinynix systemd[1]: Remount Root and Kernel File Systems was skipped because of an unmet condition check (ConditionVirtualization=!container).
+tinynix systemd[1]: Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionVirtualization=!container).
+tinynix systemd[1]: Load/Save OS Random Seed was skipped because of an unmet condition check (ConditionVirtualization=!container).
+tinynix systemd[1]: First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+tinynix systemd[1]: Starting Apply Kernel Variables...
+tinynix systemd[1]: Network Time Synchronization was skipped because of an unmet condition check (ConditionVirtualization=!container).
+tinynix systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+tinynix systemd[1]: Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+tinynix systemd[1]: TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+tinynix systemd[1]: Starting Coldplug All udev Devices...
+tinynix systemd[1]: Mounted Huge Pages File System.
+tinynix systemd-journald[118]: Collecting audit messages is enabled.
+tinynix systemd[1]: Mounted POSIX Message Queue File System.
+tinynix systemd[1]: Mounted Kernel Debug File System.
+tinynix systemd[1]: Mounted Kernel Trace File System.
+tinynix systemd[1]: modprobe@configfs.service: Deactivated successfully.
+tinynix systemd[1]: Finished Load Kernel Module configfs.
+tinynix systemd[1]: Mounted FUSE Control File System.
+tinynix systemd[1]: Finished Apply Kernel Variables.
+tinynix systemd[1]: Finished Create Static Device Nodes in /dev gracefully.
+tinynix systemd[1]: Mounting Kernel Configuration File System...
+tinynix systemd[1]: Starting Create Static Device Nodes in /dev...
+tinynix systemd[1]: Mounted Kernel Configuration File System.
+tinynix systemd[1]: Finished Create Static Device Nodes in /dev.
+tinynix systemd[1]: Reached target Preparation for Local File Systems.
+tinynix systemd[1]: Starting Rule-based Manager for Device Events and Files...
+tinynix systemd-journald[118]: Journal started
+tinynix systemd-journald[118]: Runtime Journal (/run/log/journal/62febb81412e41bc9481aaee94fbcf34) is 8M, max 500M, 492M free.
+tinynix systemd[1]: Started Journal Service.
+tinynix systemd[1]: Starting Flush Journal to Persistent Storage...
+tinynix systemd-udevd[129]: Using default interface naming scheme 'v258'.
+tinynix systemd-journald[118]: Time spent on flushing to /var/log/journal/62febb81412e41bc9481aaee94fbcf34 is 16.731ms for 539 entries.
+tinynix systemd-journald[118]: System Journal (/var/log/journal/62febb81412e41bc9481aaee94fbcf34) is 24M, max 4G, 3.9G free.
+tinynix systemd-journald[118]: Received client request to flush runtime journal.
+tinynix systemd-journald[118]: File /var/log/journal/62febb81412e41bc9481aaee94fbcf34/system.journal corrupted or uncleanly shut down, renaming and replacing.
+tinynix systemd[1]: Finished Flush Journal to Persistent Storage.
+tinynix systemd[1]: Started Rule-based Manager for Device Events and Files.
+tinynix systemd[1]: Finished Coldplug All udev Devices.
+tinynix kernel: ACPI: AC: AC Adapter [AC1] (off-line)
+tinynix kernel: ACPI: battery: Slot [BAT1] (battery present)
+tinynix (udev-worker)[195]: vtcon0: Process '/nix/store/2gcl8s7879s6pa9jyvvf2n3ak0f3wpfk-systemd-258.1/bin/systemctl --no-block restart systemd-vconsole-setup.service' failed with exit code 5.
+tinynix systemd[1]: Mounting /run/wrappers...
+tinynix systemd[1]: Mounting Mount WSLg X11 socket...
+tinynix kernel: kvm_amd: TSC scaling supported
+tinynix kernel: kvm_amd: Nested Virtualization enabled
+tinynix kernel: kvm_amd: Nested Paging enabled
+tinynix kernel: kvm_amd: kvm_amd: Hyper-V enlightened NPT TLB flush enabled
+tinynix kernel: kvm_amd: kvm_amd: Hyper-V Direct TLB Flush enabled
+tinynix kernel: kvm_amd: Virtual VMLOAD VMSAVE supported
+tinynix systemd[1]: Mounted /run/wrappers.
+tinynix systemd[1]: Mounted Mount WSLg X11 socket.
+tinynix systemd[1]: Reached target Local File Systems.
+tinynix systemd[1]: Listening on Boot Entries Service Socket.
+tinynix systemd[1]: Starting Create SUID/SGID Wrappers...
+tinynix systemd[1]: Update Boot Loader Random Seed was skipped because of an unmet condition check (ConditionVirtualization=!container).
+tinynix systemd[1]: Save Transient machine-id to Disk was skipped because of an unmet condition check (ConditionPathIsMountPoint=/etc/machine-id).
+tinynix systemd[1]: Starting Create System Files and Directories...
+tinynix systemd-tmpfiles[228]: fchmod() of /tmp/.X11-unix failed: Read-only file system
+tinynix systemd[1]: Finished Create System Files and Directories.
+tinynix systemd[1]: Rebuild Journal Catalog was skipped because of an unmet condition check (ConditionNeedsUpdate=/var).
+tinynix systemd[1]: Update is Completed was skipped because no trigger condition checks were met.
+tinynix systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+tinynix systemd[1]: WSLg Remount Service was skipped because of an unmet condition check (ConditionPathExists=!/tmp/.X11-unix/X0).
+tinynix systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+tinynix systemd[1]: suid-sgid-wrappers.service: Deactivated successfully.
+tinynix systemd[1]: Finished Create SUID/SGID Wrappers.
+tinynix systemd[1]: suid-sgid-wrappers.service: Consumed 221ms CPU time, 5.6M memory peak, 1.3M read from disk.
+tinynix systemd[1]: Reached target System Initialization.
+tinynix systemd[1]: Discard unused filesystem blocks once a week was skipped because of an unmet condition check (ConditionVirtualization=!container).
+tinynix systemd[1]: Started logrotate.timer.
+tinynix systemd[1]: Started Daily Cleanup of Temporary Directories.
+tinynix systemd[1]: Reached target Timer Units.
+tinynix systemd[1]: Listening on D-Bus System Message Bus Socket.
+tinynix systemd[1]: Listening on Nix Daemon Socket.
+tinynix systemd[1]: Listening on Hostname Service Socket.
+tinynix systemd[1]: Reached target Socket Units.
+tinynix systemd[1]: Reached target Basic System.
+tinynix systemd[1]: Starting Home Manager environment for user01...
+tinynix systemd[1]: Import lastlog data into lastlog2 database was skipped because of an unmet condition check (ConditionPathExists=!/var/lib/lastlog/lastlog2.db).
+tinynix systemd[1]: Starting Logrotate configuration check...
+tinynix systemd[1]: Starting Name Service Cache Daemon (nsncd)...
+tinynix logrotate[304]: warning: logrotate in debug mode does nothing except printing debug messages!  Consider using verbose mode (-v) instead if this is not what you want.
+tinynix logrotate[304]: reading config file /nix/store/h1nv2g21wnlb3mhmhvsjrva0djl6pfh4-logrotate.conf
+tinynix logrotate[304]: note: 'monthly' overrides previously specified 'weekly'
+tinynix logrotate[304]: Reading state from file: /var/lib/logrotate.status
+tinynix logrotate[304]: Allocating hash table for state file, size 64 entries
+tinynix logrotate[304]: Creating new state
+tinynix logrotate[304]: Creating new state
+tinynix logrotate[304]: Handling 2 logs
+tinynix logrotate[304]: rotating pattern: "/var/log/btmp" monthly empty log files are not rotated, only log files >= 1048576 bytes are rotated, (1 rotations), old logs are removed
+tinynix logrotate[304]: considering log /var/log/btmp
+tinynix logrotate[304]:   Now: 2025-11-23 15:01
+tinynix logrotate[304]:   Last rotated at 2025-11-23 15:00
+tinynix logrotate[304]:   log does not need rotating (log has already been rotated)
+tinynix logrotate[304]: rotating pattern: "/var/log/wtmp" monthly empty log files are not rotated, only log files >= 1048576 bytes are rotated, (1 rotations), old logs are removed
+tinynix logrotate[304]: considering log /var/log/wtmp
+tinynix logrotate[304]:   Now: 2025-11-23 15:01
+tinynix logrotate[304]:   Last rotated at 2025-11-23 15:00
+tinynix logrotate[304]:   log does not need rotating (log has already been rotated)
+tinynix systemd[1]: Finished Logrotate configuration check.
+tinynix nsncd[305]: Nov 23 15:01:55.687 INFO started, config: Config { ignored_request_types: {}, worker_count: 8, handoff_timeout: 10s }, path: "/var/run/nscd/socket"
+tinynix hm-activate-user01[303]: Starting Home Manager activation
+tinynix systemd[1]: Started Name Service Cache Daemon (nsncd).
+tinynix systemd-journald[118]: File /var/log/journal/62febb81412e41bc9481aaee94fbcf34/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+tinynix systemd[1]: Reached target Host and Network Name Lookups.
+tinynix systemd[1]: Reached target User and Group Name Lookups.
+tinynix systemd[1]: Starting User Login Management...
+tinynix systemd-logind[324]: New seat seat0.
+tinynix systemd[1]: Starting D-Bus System Message Bus...
+tinynix systemd[1]: Started User Login Management.
+tinynix systemd[1]: Starting linger-users.service...
+tinynix systemd[1]: linger-users.service: Deactivated successfully.
+tinynix systemd[1]: Finished linger-users.service.
+tinynix dbus-daemon[331]: dbus[331]: Unknown username "systemd-oom" in message bus configuration file
+tinynix systemd[1]: Started D-Bus System Message Bus.
+tinynix dbus-daemon[331]: [system] Successfully activated service 'org.freedesktop.systemd1'
+tinynix systemd[1]: Started Nix Daemon.
+tinynix nix-daemon[356]: accepted connection from pid 323, user user01
+tinynix nix-daemon[356]: accepted connection from pid 396, user user01
+tinynix hm-activate-user01[303]: Activating checkFilesChanged
+tinynix hm-activate-user01[303]: Activating checkLinkTargets
+tinynix hm-activate-user01[303]: Activating writeBoundary
+tinynix hm-activate-user01[303]: Activating installPackages
+tinynix unknown: WSL (269) ERROR: CheckConnection: getaddrinfo() failed: -5
+tinynix hm-activate-user01[303]: Activating linkGeneration
+tinynix hm-activate-user01[303]: Cleaning up orphan links from /home/user01
+tinynix hm-activate-user01[303]: Creating home file links in /home/user01
+tinynix hm-activate-user01[303]: Activating onFilesChange
+tinynix hm-activate-user01[303]: Activating reloadSystemd
+tinynix hm-activate-user01[303]: User systemd daemon not running. Skipping reload.
+tinynix hm-activate-user01[303]: Activating sops-nix
+tinynix hm-activate-user01[303]: User systemd daemon not running. Probably executed on boot where no manual start/reload is needed.
+tinynix nix-daemon[356]: accepted connection from pid 500, user user01
+tinynix unknown: WSL (269) ERROR: CheckConnection: getaddrinfo() failed: -5
+tinynix systemd[1]: home-manager-user01.service: Deactivated successfully.
+tinynix systemd[1]: Finished Home Manager environment for user01.
+tinynix systemd[1]: home-manager-user01.service: Consumed 727ms CPU time, 51.9M memory peak, 41.6M read from disk.
+tinynix systemd[1]: Starting Permit User Sessions...
+tinynix systemd[1]: Finished Permit User Sessions.
+tinynix systemd[1]: Reached target Multi-User System.
+tinynix systemd[1]: Startup finished in 3.171s.
+tinynix login[531]: pam_unix(login:session): session opened for user user01(uid=1000) by (uid=0)
+tinynix systemd[1]: Created slice Slice /user/1000.
+tinynix systemd[1]: Starting User Runtime Directory /run/user/1000...
+tinynix systemd-logind[324]: New session 'c1' of user 'user01' with class 'user' and type 'tty'.
+tinynix systemd[1]: Finished User Runtime Directory /run/user/1000.
+tinynix systemd[1]: Starting User Manager for UID 1000...
+tinynix (systemd)[538]: pam_unix(systemd-user:session): session opened for user user01(uid=1000) by (uid=0)
+tinynix systemd-logind[324]: New session 'c2' of user 'user01' with class 'manager' and type 'unspecified'.
+tinynix (sd-exec-strv)[543]: '/run/systemd/user-generators/wsl-user-generator' is marked world-writable, which is a security risk as it is executed with privileges. Please remove world writability permission bits. Proceeding anyway.
+tinynix systemd[538]: Queued start job for default target Main User Target.
+tinynix systemd[538]: Created slice User Application Slice.
+tinynix systemd[538]: Started Daily Cleanup of User's Temporary Directories.
+tinynix systemd[538]: Reached target Paths.
+tinynix systemd[538]: Reached target Timers.
+tinynix systemd[538]: Starting D-Bus User Message Bus Socket...
+tinynix systemd[538]: Starting Create User Files and Directories...
+tinynix systemd[538]: Starting WSLg user service...
+tinynix systemd[538]: Finished Create User Files and Directories.
+tinynix systemd[538]: Listening on D-Bus User Message Bus Socket.
+tinynix systemd[538]: Reached target Sockets.
+tinynix systemd[538]: Reached target Basic System.
+tinynix systemd[538]: Starting Run user-specific NixOS activation...
+tinynix systemd[538]: Starting sops-nix activation...
+tinynix systemd[1]: Started User Manager for UID 1000.
+tinynix systemd[1]: Started Session c1 of User user01.
+tinynix shell-wrapper[567]: SIGCHLD is ignored, skipping setting environment
+tinynix systemd[538]: Finished Run user-specific NixOS activation.
+tinynix systemd[538]: Finished sops-nix activation.
+tinynix systemd[538]: Reached target Main User Target.
+tinynix systemd[538]: Finished WSLg user service.
+tinynix systemd[538]: Startup finished in 604ms.
