@@ -12,7 +12,7 @@ Setup is based on
 Run the following commands in Windows PowerShell to install:
 
 ```powershell
-Invoke-WebRequest https://raw.githubusercontent.com/omasakun/tinynix-config/refs/heads/main/setup.ps1 -UseBasicParsing | Invoke-Expression
+Invoke-WebRequest "https://raw.githubusercontent.com/omasakun/tinynix-config/refs/heads/main/setup.ps1" -UseBasicParsing | Invoke-Expression
 ```
 
 Or manually run the following commands:
