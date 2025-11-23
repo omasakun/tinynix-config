@@ -1,12 +1,12 @@
 $Name = "tinynix"
-$DownloadUrl = "https://github.com/nix-community/NixOS-WSL/releases/download/2505.7.0/nixos.wsl"
 $WslFile = "nixos.wsl"
+$DownloadUrl = "https://github.com/nix-community/NixOS-WSL/releases/download/2505.7.0/nixos.wsl"
 
 if (-not (Test-Path $WslFile)) {
   Invoke-WebRequest $DownloadUrl -OutFile $WslFile -UseBasicParsing
 }
 
-wsl --install --from-file nixos.wsl --name $Name
+wsl --install --from-file nixos.wsl --name $Name --no-launch
 
 wsl -d $Name sudo mkdir /config
 wsl -d $Name sudo chown nixos:users /config
